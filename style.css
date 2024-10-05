@@ -59,9 +59,9 @@
  }
 
  .navbar a{
-    font-size: 1.8 rem;
+    font-size: 2.2rem;
     color: var(--text-color);
-    font-weight: 500;
+    font-weight: 800;
     margin-left: 4rem;
     border-bottom: 3px solid transparent;
     transition: 0.3s ease;
@@ -109,15 +109,19 @@ section{
     padding: 2rem;
 }
 .social-icons a{
-    font-size: 24px;
-    margin: 8px;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+    font-size: 3rem;
+    margin: 3rem 0.5rem;
     padding: 1rem ;
     color: var(--main-color);
     margin-top: 1rem;
-
-
-    
+    border: 2px solid var(--main-color);
+    background: transparent;
+    border-radius: 50%;   
 }
+
 .home-img  img{
    width: 32vw;
    border-radius: 55%;
@@ -140,6 +144,9 @@ section{
    font-size: 7rem;
    text-align: left;
 }
+.about-content p{
+   font-size: 1.7rem;
+}
 .home-content p{
    font-size: 2rem;
 }
@@ -151,20 +158,20 @@ section{
 
 }
 
-.service-container{
+.project-container{
    display: grid;
    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
    align-items: center;
    gap: 2.5rem;
 }
-.services{
+.projects{
    background-color: var(--bg-color);
    color: black;
 }
-.services h2{
+.projects h2{
    color: var(--text-color);
 }
-.service-box{
+.project-box{
    display: flex;
    justify-content: center;
    align-items: center;
@@ -175,13 +182,13 @@ section{
    border: 5px solid var(--main-color);
    transition: 0.4s ease-in-out;
 }
-.service-box:hover{
+.project-box:hover{
    background-color: var(--second-bg-color);
    color: var(--main-color);
    border: 5px solid var(--main-color);
    transform: scale(1.1);
 }
-.service-info{
+.project-info{
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -189,16 +196,16 @@ section{
    text-align: center;
    padding: 5rem;
 }
-.service-info i{
+.project-info i{
    font-size: 8rem;
 }
- .service-info h4{
+ .project-info h4{
    font-size: 4rem;
    margin: 2rem 0;
    font-weight: 800;
 
  }
- .service-info p{
+ .project-info p{
    font-size: 1.5rem;
    font-weight:400 ;
    line-height: 1.7;
@@ -269,4 +276,57 @@ section{
    text-align: center;
    margin-top: 40px;
    font-size: 16px;
+}
+ 
+
+@media(max-width:1024px){
+   #menu-icon{
+      display: block;
+   }
+   .navbar{
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 50%;
+      padding: 1rem 3rem;
+      background-color: rgba(0,0,0,0.8);
+      border-left: 2px solid var(--main-color);
+      border-bottom: 2px solid var(--main-color);
+      border-bottom-left-radius: 2rem ;
+      display: none;
+   }
+   .navbar a{
+      display: block;
+      font-size: 2rem;
+      margin: 3rem,0;
+      color: var(--text-color);
+   }
+   .home{
+      flex-direction: column-reverse;
+      margin: 5rem 0;
+      gap: 5rem;
+   }
+   .home-content{
+      text-align:center;
+      align-items:center ;
+   }
+   
+   .home-img{
+      width: 30vw;
+
+   }
+   .about{
+      flex-direction: column-reverse;
+      text-align: center;
+   }
+   .about h3{
+      text-align: center;
+      margin: 2rem 0;
+   }
+   .about-img{
+      width: 52vw;
+   }
+   .Contact form{
+      flex-direction: column;
+   }
 }
