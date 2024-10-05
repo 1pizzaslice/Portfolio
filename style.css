@@ -242,6 +242,24 @@ section{
    border: 2px solid var(--main-color);
    margin: 1.5rem 0;
 }
+.btn{
+   display: inline-block;
+   padding: 1rem 3rem;
+   background: var(--main-color);
+   box-shadow: 0 0 25px var(--main-color);
+   border-radius: 3rem;
+   font-size: 1.8rem;
+   color: black;
+   border: 2px solid transparent;
+   font-weight: 600;
+   transition: 0.3s; 
+
+ }
+ .btn:hover {
+   background-color: var(--text-color); 
+   color: var(--main-color);              
+ }
+
 .footer{  
    background-color: var(--bg-color);
    padding: 50px 0;
